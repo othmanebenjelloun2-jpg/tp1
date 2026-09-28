@@ -1,19 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Othmane Benjelloun – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
-<h1>bonjour je suis othmane</h1>
+<header>
+  <div class="wrap">
+    <nav aria-label="Navigation principale">
+      <a class="logo" href="#accueil">Othmane Benjelloun</a>
+      <ul id="menu">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="tools">
+        <button class="icon-btn" id="theme-btn" aria-label="Changer de thème">🌓</button>
+        <button class="icon-btn" id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
 
+<main>
+  <div class="hero" id="accueil">
+    <div class="wrap">
+      <img class="avatar" src="photo.jpg" alt="Portrait d'Othmane Benjelloun" width="90" height="90">
+      <div>
+        <h1>Othmane Benjelloun</h1>
+        <p class="role">Étudiant en Génie Logiciel à l'ESISA, Fès</p>
+        <p>Passionné par le développement logiciel, les algorithmes et la résolution de problèmes. À la recherche d'un stage d'observation.</p>
+        <a class="btn primary" href="#projets">Voir mes projets</a>
+        <a class="btn ghost" href="#contact">Me contacter</a>
+      </div>
+    </div>
+  </div>
 
+  <section id="apropos">
+    <div class="wrap">
+      <h2>À propos</h2>
+      <p class="lead">Étudiant en Génie Logiciel à l'ESISA, je suis motivé, rigoureux et à l'aise en équipe sur des projets techniques.</p>
+      <p class="lead">Mon objectif : obtenir un stage d'observation pour découvrir le milieu professionnel, approfondir mes connaissances en développement logiciel, notamment les bases de données, et acquérir une expérience concrète dans un environnement technique.</p>
+    </div>
+  </section>
 
+  <section id="competences" style="background:var(--surface)">
+    <div class="wrap">
+      <h2>Compétences</h2>
+      <h3 class="sub">Techniques</h3>
+      <ul class="tags">
+        <li>C / C++</li><li>Python</li><li>SQL</li><li>HTML / CSS</li><li>MATLAB</li>
+        <li>Qt Creator</li><li>Microsoft Office</li><li>Mathématiques (analyse, statistique inférentielle)</li><li>Systèmes embarqués</li>
+      </ul>
+      <h3 class="sub">Qualités</h3>
+      <ul class="tags">
+        <li>Esprit d'équipe</li><li>Rigueur</li><li>Autonomie</li><li>Capacité d'apprentissage</li><li>Résolution de problèmes</li>
+      </ul>
+      <h3 class="sub">Langues</h3>
+      <ul class="tags">
+        <li>Arabe : courant</li><li>Français : courant</li><li>Anglais : intermédiaire</li>
+      </ul>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="projets">
+    <div class="wrap">
+      <h2>Projets académiques</h2>
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button data-filter="all" aria-pressed="true">Tous</button>
+        <button data-filter="Python" aria-pressed="false">Python</button>
+        <button data-filter="C++" aria-pressed="false">C++</button>
+        <button data-filter="SQL" aria-pressed="false">SQL</button>
+        <button data-filter="MATLAB" aria-pressed="false">MATLAB</button>
+      </div>
+      <div class="grid">
+        <article class="card" data-tech="Python">
+          <h3>Jeu de dames</h3>
+          <p>Développement d'un jeu complet avec gestion des règles et logique du jeu.</p>
+          <ul class="tags"><li>Python</li></ul>
+        </article>
+        <article class="card" data-tech="Algorithmes">
+          <h3>HashCode Algorithm</h3>
+          <p>Résolution de problèmes algorithmiques complexes et optimisation des solutions.</p>
+          <ul class="tags"><li>Algorithmique</li></ul>
+        </article>
+        <article class="card" data-tech="MATLAB">
+          <h3>Approximation numérique</h3>
+          <p>Implémentation de la méthode des trapèzes pour le calcul d'intégrales numériques.</p>
+          <ul class="tags"><li>MATLAB</li></ul>
+        </article>
+        <article class="card" data-tech="C++">
+          <h3>Application de gestion</h3>
+          <p>Application de gestion développée avec la programmation orientée objet.</p>
+          <ul class="tags"><li>C++</li><li>POO</li></ul>
+        </article>
+        <article class="card" data-tech="SQL">
+          <h3>Base de données Help Desk Ticket</h3>
+          <p>Conception d'une base de données relationnelle pour la gestion des tickets d'assistance et requêtes SQL.</p>
+          <ul class="tags"><li>SQL</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="formation" style="background:var(--surface)">
+    <div class="wrap">
+      <h2>Formation</h2>
+      <ul class="timeline">
+        <li><b>2e année Génie Logiciel</b><span>ESISA, Fès · 2025 – 2026</span></li>
+        <li><b>1re année Génie Logiciel</b><span>ESISA, Fès · 2024 – 2025</span></li>
+        <li><b>Baccalauréat International, Sciences Physiques</b><span>2023 – 2024</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="lead">Une proposition de stage ou une question ? Écrivez-moi ou appelez-moi.</p>
+      <ul class="contact-list">
+        <li>✉ <a href="mailto:othmanebenjelloun2@gmail.com">othmanebenjelloun2@gmail.com</a></li>
+        <li>✆ <a href="tel:+212625844406">+212 6 25 84 44 06</a></li>
+        <li>⌂ Fès, Maroc</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Othmane Benjelloun</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
